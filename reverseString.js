@@ -1,6 +1,7 @@
 //SOLUTION 1
 function reverse1(word) {
-	return word.split("").reverse().join("");
+	//return word.split("").reverse().join("");
+	return [...word].reverse().join("");
 }
 console.log(reverse1("elevator"));
 
