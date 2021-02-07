@@ -2,7 +2,7 @@
 function reverse1(word) {
 	return word.split("").reverse().join("");
 }
-reverse1("fab");
+console.log(reverse1("elevator"));
 
 //Solution 2
 function reverse2(word) {
@@ -15,3 +15,9 @@ function reverse2(word) {
 	return reverse;
 }
 console.log(reverse2("elevator"));
+
+//Solution 3
+function reverse3(word) {
+	return word.split("").reduce((acc, characters) => characters + acc, "");
+}
+console.log(reverse3("elevator"));
