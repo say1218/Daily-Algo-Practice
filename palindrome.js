@@ -21,3 +21,15 @@ console.log(palindrome2("mom"));
 console.log(palindrome2("mother"));
 console.log(palindrome2("wonderland"));
 console.log(palindrome2("deified"));
+
+//solution3
+function palindrome3(word) {
+	return word
+		.split("")
+		.every((char, index) => char === word[word.length - index - 1]);
+}
+
+console.log(palindrome3("mom"));
+console.log(palindrome3("mother"));
+console.log(palindrome3("wonderland"));
+console.log(palindrome3("deified"));
