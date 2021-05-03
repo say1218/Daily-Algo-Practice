@@ -17,3 +17,12 @@ function mergeArrays(x, y) {
 }
 
 mergeArrays([{ id: 2 }, { id: 4 }], [{ id: 3 }, { id: 2 }, { id: 4 }]);
+
+//merge 2 arrays
+
+//this is good for less than 100 items
+for (var i = 0; i < array2.length; i++)
+	if (array1.indexOf(array2[i]) === -1) array1.push(array2[i]);
+
+//thsi is good for more items
+var a = [...new Set([...array1, ...array2])];

@@ -34,3 +34,5 @@ function isAnagram(word1, word2) {
 }
 
 console.log(isAnagram("silenz", "listen")); // should return true
+
+// isAnagarm str1.split('').sort().join('') === str2.split('').sort().join('')

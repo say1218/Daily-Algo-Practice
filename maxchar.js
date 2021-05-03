@@ -40,13 +40,11 @@ console.log(maxChar("Mpissisippppppiiii"));
 //for..in ---> key (objects,and everything else to get key)
 //for..of ----> values (strings,arrays,maps etc)
 
-function check(){
-	console.log(a); console.log(b); let a = 10; var b = 20;}
- undefined
- check()
- VM404:2 Uncaught ReferenceError: Cannot access 'a' before initialization
-	 at check (<anonymous>:2:16)
-	 at <anonymous>:1:1
- check @ VM404:2
- (anonymous) @ VM427:1
- console.log(c); console.log(d); let c = 30; var d = 20;
+function check() {
+	console.log(a);
+	console.log(b);
+	let a = 10;
+	var b = 20;
+}
+undefined;
+check();
